@@ -28,6 +28,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'com.h2database:h2'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+
+	implementation group: 'io.micrometer', name: 'micrometer-observation', version: '1.10.5'
+	implementation group: 'io.micrometer', name: 'micrometer-tracing-bridge-brave', version: '1.0.3'
+	implementation group: 'io.zipkin.reporter2', name: 'zipkin-reporter-brave', version: '2.16.3'
+	implementation 'org.springframework.amqp:spring-rabbit'
+
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'

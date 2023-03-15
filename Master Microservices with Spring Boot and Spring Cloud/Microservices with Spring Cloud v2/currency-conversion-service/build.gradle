@@ -28,6 +28,12 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+	implementation group: 'io.micrometer', name: 'micrometer-observation', version: '1.10.5'
+	implementation group: 'io.micrometer', name: 'micrometer-tracing-bridge-brave', version: '1.0.3'
+	implementation group: 'io.zipkin.reporter2', name: 'zipkin-reporter-brave', version: '2.16.3'
+	implementation 'org.springframework.amqp:spring-rabbit'
+
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
